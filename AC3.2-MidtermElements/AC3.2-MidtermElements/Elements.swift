@@ -44,7 +44,7 @@ class Elements {
         let symbol = dict["symbol"] as? String,
         let meltingC = dict["melting_c"] as? Int,
         let boilingC = dict["boiling_c"] as? Int else {
-            print("Could not get boilingC")
+            print("Could not get details")
             return nil
         }
         guard let density = dict["density"] as? Int else {

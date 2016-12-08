@@ -35,8 +35,13 @@ class APIRequestManager {
         // this is specifically for the midterm  -- don't change if you want to write there
         request.addValue("Basic a2V5LTE6dHdwTFZPdm5IbEc2ajFBZndKOWI=", forHTTPHeaderField: "Authorization")
         
+        let bodyDict: [String: Any] = [
+            "my_name": "Simone",
+            "favorite_element": "Oxygen"
+        ]
+        
         do {
-            let body = try JSONSerialization.data(withJSONObject: data, options: [])
+            let body = try JSONSerialization.data(withJSONObject: bodyDict, options: [])
             request.httpBody = body
         } catch {
             print("Error posting body: \(error)")

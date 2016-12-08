@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var elementNameLabel: UILabel!
     @IBOutlet weak var elementDetailsText: UITextView!
     @IBOutlet weak var fullImage: UIImageView!
-    
+    @IBOutlet weak var addToFavorites: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,11 +21,11 @@ class ViewController: UIViewController {
     }
     
     func loadLabels() {
-        if let name = elementDetails?.name {
-            elementNameLabel.text = name
+        if let name = elementDetails?.name, let weight = elementDetails?.weight {
+            elementNameLabel.text = "\(name)\n\(weight)"
         }
         if let id = elementDetails?.id, let weight = elementDetails?.weight, let number = elementDetails?.weight, let melting = elementDetails?.meltingC, let boiling = elementDetails?.boilingC, let density = elementDetails?.density, let discovery = elementDetails?.discoveryYear {
-            elementDetailsText.text = "STATS\n\nID: \(id)\nWeight: \(weight)\nNumber: \(number)\nMelting Point: \(melting)\nBoiling Point: \(boiling)\nDensity: \(density)\n\nDiscovery: \(discovery)"
+            elementDetailsText.text = "ID: \(id)\nWeight: \(weight)\nNumber: \(number)\nMelting Point: \(melting)\nBoiling Point: \(boiling)\nDensity: \(density)\n\nDiscovery: \(discovery)"
         }
         if let symbol = elementDetails?.symbol {
             let fullPicture = "https://s3.amazonaws.com/ac3.2-elements/\(symbol).png"
@@ -42,5 +42,9 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func postAction(_ sender: UIButton) {
+        //attempted post but couldn't actually get it to work without crashing
+        print("faux post")
+    }
 }
 

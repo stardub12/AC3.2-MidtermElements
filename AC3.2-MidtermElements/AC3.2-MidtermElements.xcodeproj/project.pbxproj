@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D0082541DFA0E99005ED773 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0082531DFA0E99005ED773 /* Post.swift */; };
 		7D319E691DF9E5F2008F38A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D319E681DF9E5F2008F38A7 /* AppDelegate.swift */; };
 		7D319E6B1DF9E5F2008F38A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D319E6A1DF9E5F2008F38A7 /* ViewController.swift */; };
 		7D319E6E1DF9E5F2008F38A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D319E6C1DF9E5F2008F38A7 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7D0082531DFA0E99005ED773 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		7D319E651DF9E5F2008F38A7 /* AC3.2-MidtermElements.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AC3.2-MidtermElements.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D319E681DF9E5F2008F38A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D319E6A1DF9E5F2008F38A7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 			children = (
 				7D319E801DF9E785008F38A7 /* APIRequestManager.swift */,
 				7D319E821DF9E78F008F38A7 /* Elements.swift */,
+				7D0082531DFA0E99005ED773 /* Post.swift */,
 			);
 			name = Model/Managers;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 				7D319E811DF9E785008F38A7 /* APIRequestManager.swift in Sources */,
 				7D319E7E1DF9E691008F38A7 /* ElementsTableViewController.swift in Sources */,
 				7D319E6B1DF9E5F2008F38A7 /* ViewController.swift in Sources */,
+				7D0082541DFA0E99005ED773 /* Post.swift in Sources */,
 				7D319E691DF9E5F2008F38A7 /* AppDelegate.swift in Sources */,
 				7D319E831DF9E78F008F38A7 /* Elements.swift in Sources */,
 			);

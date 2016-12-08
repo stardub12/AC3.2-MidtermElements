@@ -30,8 +30,11 @@
                                 <state key="normal" title="Add To Favorites">
                                     <color key="titleColor" red="0.40000000600000002" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="postAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lrt-NT-xKV"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GJW-zE-qoj">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GJW-zE-qoj">
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -64,6 +67,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="addToFavorites" destination="Anc-fa-e1p" id="ulj-v0-p6U"/>
                         <outlet property="elementDetailsText" destination="WXS-uI-fbc" id="qeV-Qb-U7c"/>
                         <outlet property="elementNameLabel" destination="GJW-zE-qoj" id="aEd-xA-cxg"/>
                         <outlet property="fullImage" destination="oXW-5y-LU6" id="Itl-FI-GNa"/>
