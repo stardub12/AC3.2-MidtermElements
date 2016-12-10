@@ -43,8 +43,13 @@ class ViewController: UIViewController {
     }
     
     @IBAction func postAction(_ sender: UIButton) {
-        //attempted post but couldn't actually get it to work without crashing
-        print("faux post")
+        let bodyDict: [String: Any] = [
+            "my_name": "Simone",
+            "favorite_element": "Oxygen"
+        ]
+
+        let post = "https://api.fieldbook.com/v1/58488d40b3e2ba03002df662/favorites"
+        APIRequestManager.manager.postRequest(endPoint: post, data: bodyDict)
     }
 }
 
